@@ -1,4 +1,4 @@
-const API = 'http://127.0.0.1:8000/api';
+const API = 'https://smartbuyai-htlt.onrender.com/api';
 let products = [], selected = null, pref = 'balanced';
 const money = n => n == null ? '—' : '₹' + Number(n).toLocaleString('en-IN', {maximumFractionDigits:0});
 const esc = s => String(s ?? '').replace(/[&<>'"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[c]));
